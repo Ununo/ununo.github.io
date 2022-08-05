@@ -28,7 +28,7 @@ Controller.ButtonInput = function() {
 };
 
 Controller.ButtonInput.prototype = {
-    constructor : ButtonInput,
+    constructor : Controller.ButtonInput,
     getInput : function(down) {
         if (this.down != down) this.active=down;
         this.down = down;
