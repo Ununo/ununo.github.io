@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rabbit Trap</title>
+    </head>
+    <body>
+        <canvas></canvas>
+        <script type = "text/javascript">
+            sources = ["/scripts/controller.js","/scripts/display.js","/scripts/engine.js","/scripts/game.js","/scripts/main.js"];
+            
+            for (let index = 0; index < sources.length; index++){
+                let script = document.createElement("script");
+                script.setAttribute("type","text/javascript");
+                script.setAttribute("src", sources[index]);
+                document.head.appendChild(script);
+            }
+            
+        </script>
+    </body>
+</html>
